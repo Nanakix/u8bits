@@ -34,7 +34,7 @@ pub fn set_bit(b: &mut u8, pos: u8, value: bool) {
 }
 /// Get the bit at position 'pos' of byte 'b'.
 pub fn get_bit(b: &u8, pos: u8) -> bool {
-    let mask: u8 = !1u8 << pos;
+    let mask: u8 = 1u8 << pos;
     (*b & mask) == mask
 }
 
